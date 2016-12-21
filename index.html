@@ -63,7 +63,7 @@ function dragstarted() {
         dx = x1 - x0,
         dy = y1 - y0;
 
-    if (dx * dx + dy * dy > 100) d.push([x0 = x1, y0 = y1]);
+    if (dx * dx + dy * dy > 50) d.push([x0 = x1, y0 = y1]);
     else d[d.length - 1] = [x1, y1];
     active.attr("d", line);
   });
