@@ -6,6 +6,6 @@ Credits
 
 Built by @computergirlcreative 2016 using the D3.js API.
 
-See licesnce
+See license
 
 
