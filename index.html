@@ -28,7 +28,7 @@ path {
 <head>
 <style>
 body {
-    background-image: url("images/103WrightStreet_500_sml90.png");
+    background-image: img id="myImage" url("images/103WrightStreet_500_sml90.png");
     background-repeat: no-repeat;
     background-position: left top;
     margin-left: 0px;
@@ -68,12 +68,13 @@ function dragstarted() {
     active.attr("d", line);
   });
 }
-</script>
-           <button onclick="document.getElementById('myImage').src='images/103WrightStreet_500_sml90.png'">Turn on the light</button>
+    <button onclick="document.getElementById('myImage').src='images/103WrightStreet_500_sml90.png'">Turn on the light</button>
 
 <img id="myImage" src="pic_bulboff.gif" style="width:100px">
 
 <button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+</script>
+         
 <body>
 <button type="button" onclick="window.location.reload()">Refresh</button>
 </body>
