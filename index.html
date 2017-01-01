@@ -27,7 +27,7 @@ var svg = d3.select("svg")
 
 function dragstarted() {
   var d = d3.event.subject,
-      active = svg.append("path").datum(d),
+      active = svg.append("MainPath").datum(d),
       x0 = d3.event.x,
       y0 = d3.event.y;
 
