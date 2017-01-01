@@ -1,30 +1,23 @@
 			
 
 #body {
-    background-image: img id="myImage" url("images/103WrightStreet_500_sml90.png");
-    background-repeat: no-repeat;
-    background-position: left top;
-    margin-left: 0px;		
+    			background-image: img id="myImage" url("images/103WrightStreet_500_sml90.png");
+    			background-repeat: no-repeat;
+    			background-position: left top;
+    			margin-left: 0px;		
 }
 
+#path {
+			fill: none;
+			stroke: #000;
+			stroke-width: 1px;
+			stroke-linejoin: bevel;
+			stroke-linecap: round;
+				}
 
 
-#MainContainer {
-			    position: relative;
-			    margin: 0 auto;
-			    width: 960px;
-			    height: 500px;
-			    border: 1px solid black;
 			}
-			#MainImage {
-			    position: relative;
-			    margin: 10px auto 0 auto;
-			    width: 960px;
-			    height: 500px;
-			    background: url();
-			    border: 1px solid black;
-			}
-			#TNBodyContainer {
+#TNBodyContainer {
 			    position: relative;
 			    margin: 10px auto 0 auto;
 			    border: 1px solid black;
