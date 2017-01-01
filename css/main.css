@@ -17,6 +17,14 @@
 			    border: 1px solid black;
 }
 
+#path {
+				fill: none;
+				stroke: #000;
+				stroke-width: 1px;
+				stroke-linejoin: round;
+				stroke-linecap: round;
+}
+
 #TNBodyContainer {
 			    position: relative;
 			    margin: 10px auto 0 auto;
@@ -40,10 +48,4 @@
 			    height: 88px;
 			    background: url("http://www.libpng.org/pub/png/img_png/linux_logo_sample.png") no-repeat center;
 			}
-#path {
-				fill: none;
-				stroke: #000;
-				stroke-width: 1px;
-				stroke-linejoin: round;
-				stroke-linecap: round;
-}
+
