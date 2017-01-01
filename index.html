@@ -6,12 +6,11 @@
     width: 760px;
     height: 500px;
     background-image: url("/images/103WrightStreet_500_sml90.png")
-        <svg fill=none width="960" height="500">
-  <rect x="0" y="0" width="100%" height="100%"></rect>
-</svg>
-<script src="//d3js.org/d3.v4.min.js"></script>;
-}
-#path {
+        
+#mySVG {
+    }
+    
+#myPath {
   fill: none;
   stroke: #000;
   stroke-width: 1px;
@@ -32,7 +31,8 @@ function myFunction() {
 </script>
 
 <script>
-var line = d3.line()
+    {
+    ({var line = d3.line()
     .curve(d3.curveBasis);
 var svg = d3.select("svg")
     .call(d3.drag()
