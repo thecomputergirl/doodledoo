@@ -1,9 +1,27 @@
+#MainContainer	{
+	   		   position:relative;
+			   margin: 0 auto;
+			   width: 960px;
+			   height: 500px;
+			   border: 1px solid black;
+			}
+#MainImage
+			    position: relative;
+			    margin: 0px auto 0 auto;
+			    width: 960px;
+			    height: 500px;
+			    background: url();
+    		            background-position: left top;
+    			    margin-left: 0px;
+			    background-repeat: no-repeat;
+			    border: 1px solid black;
+}
+
 #TNBodyContainer {
 			    position: relative;
 			    margin: 10px auto 0 auto;
 			    border: 1px solid black;
-			    width: 268px;
-			maxwidth: 760px;
+			    width: 760px;
 			    height: 88px;
 			}
 			#TNOne {
