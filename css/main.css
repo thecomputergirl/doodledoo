@@ -1,27 +1,9 @@
-			
-
-#body {
-    			background-image: img id="myImage" url("images/103WrightStreet_500_sml90.png");
-    			background-repeat: no-repeat;
-    			background-position: left top;
-    			margin-left: 0px;		
-}
-
-#path {
-			fill: none;
-			stroke: #000;
-			stroke-width: 1px;
-			stroke-linejoin: bevel;
-			stroke-linecap: round;
-				}
-
-
-			}
 #TNBodyContainer {
 			    position: relative;
 			    margin: 10px auto 0 auto;
 			    border: 1px solid black;
 			    width: 268px;
+			maxwidth: 760px;
 			    height: 88px;
 			}
 			#TNOne {
