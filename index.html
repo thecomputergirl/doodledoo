@@ -1,60 +1,56 @@
 <!DOCTYPE html>
-<html>
-<head>
-<style> 
-#myDIV {
-    width: 760px;
-    height: 500px;
-    background-image: url("/images/103WrightStreet_500_sml90.png")
-        
-#mySVG {
-    }
-    
-#myPath {
+<meta charset="utf-8">
+<style>
+
+path {
   fill: none;
   stroke: #000;
   stroke-width: 1px;
-  stroke-linejoin: bevel;
+  stroke-linejoin: round;
   stroke-linecap: round;
 }
+
 </style>
-</head>
-<body>
-<button onclick="myFunction()">Try it</button>
-<div id="myDIV">
+<div id= "myRect"><svg width="960" height="500">
+  <rect width="100%" height="100%"></rect>
+</svg>
 </div>
+<button onclick="myFunction()">Try it</button>
 
 <script>
 function myFunction() {
-     document.getElementById("myDIV").style.backgroundImage = "url(https://www.google.com.au/logos/doodles/2017/new-years-day-2017-5644902961512448.2-scta.png)";
+     document.getElementById("myRect").style.backgroundImage = "url(/images/103WrightStreet_500_sml90.png)";
 }
 </script>
-
+<script src="//d3js.org/d3.v4.min.js"></script>
 <script>
-    {
-    ({var line = d3.line()
+
+var line = d3.line()
     .curve(d3.curveBasis);
+
 var svg = d3.select("svg")
     .call(d3.drag()
         .container(function() { return this; })
         .subject(function() { var p = [d3.event.x, d3.event.y]; return [p, p]; })
         .on("start", dragstarted));
+
 function dragstarted() {
   var d = d3.event.subject,
       active = svg.append("path").datum(d),
       x0 = d3.event.x,
       y0 = d3.event.y;
+
   d3.event.on("drag", function() {
     var x1 = d3.event.x,
         y1 = d3.event.y,
         dx = x1 - x0,
         dy = y1 - y0;
-    if (dx * dx + dy * dy > 25) d.push([x0 = x1, y0 = y1]);
+
+    if (dx * dx + dy * dy > 100) d.push([x0 = x1, y0 = y1]);
     else d[d.length - 1] = [x1, y1];
     active.attr("d", line);
   });
 }
+
 </script>
-    </body>
-</html>
 
