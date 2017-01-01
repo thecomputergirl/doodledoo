@@ -20,7 +20,7 @@ path {
 <head>
 <style>
 body {
-    background-image: url("images/103WrightStreet_500_sml90.png");
+    background-image: url("");
     background-repeat: no-repeat;
     background-position: left top;
     margin-left: 0px;
@@ -56,33 +56,14 @@ function dragstarted() {
   });
 }
 </script>
-<script>   
-               function setImage(e) {
-       var clicksourse = e.target.id;
+<button type="button" onclick="myFunction()">Set background image</button>
 
-       switch (clicksourse) {
-
-           case "TNOne":
-               document.getElementById("MainImage").style.background = "url(http://www.zenimax.com/jpn/fallout3/images/avators/80x80falloutav-vb.gif)";
-               break;
-           case "TNTwo":
-               document.getElementById("MainImage").style.background = "url(http://www.libpng.org/pub/png/img_png/linux_logo_sample.png)";
-               break;
-       }
-
-
-   }
-   window.onload = function () {
-
-       document.getElementById("TNOne").addEventListener("click", function (e) {
-           setImage(e);
-       }, false);
-       document.getElementById("TNTwo").addEventListener("click", function (e) {
-           setImage(e);
-       }, false);
-
-   }
-            </script>
+<script>
+function myFunction() {
+   body.style.backgroundColor = "#f3f3f3";
+   body.style.backgroundImage = "url('/images/103WrightStreet_500_sml90.png')";
+}
+</script>
 <body>
 <button type="button" onclick="window.location.reload()">Refresh</button>
 </body>
