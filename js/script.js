@@ -26,4 +26,30 @@ function dragstarted() {
     active.attr("d", line);
   });
 }
-</script>
+
+   function setImage(e) {
+       var clicksourse = e.target.id;
+
+       switch (clicksourse) {
+
+           case "TNOne":
+               document.getElementById("MainImage").style.background = "url(http://www.zenimax.com/jpn/fallout3/images/avators/80x80falloutav-vb.gif)";
+               break;
+           case "TNTwo":
+               document.getElementById("MainImage").style.background = "url(http://www.libpng.org/pub/png/img_png/linux_logo_sample.png)";
+               break;
+       }
+
+
+   }
+   window.onload = function () {
+
+       document.getElementById("TNOne").addEventListener("click", function (e) {
+           setImage(e);
+       }, false);
+       document.getElementById("TNTwo").addEventListener("click", function (e) {
+           setImage(e);
+       }, false);
+
+   }
+
