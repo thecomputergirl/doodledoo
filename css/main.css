@@ -17,13 +17,6 @@
 			    border: 1px solid black;
 }
 
-#MainPath {
-				fill: none;
-				stroke: #000;
-				stroke-width: 1px;
-				stroke-linejoin: round;
-				stroke-linecap: round;
-}
 
 #TNBodyContainer {
 			    position: relative;
