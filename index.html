@@ -5,63 +5,57 @@
       <meta charset="utf-8">
       <meta name="author" content="Alison De Backer">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="/css/main.css">
    </head>
   <body>
         <style>
-
 path {
   fill: none;
   stroke: #000;
-  stroke-width: 3px;
-  stroke-linejoin: round;
+  stroke-width: 1px;
+  stroke-linejoin: bevel;
   stroke-linecap: round;
 }
-
 </style>
-     
- <div id="MainContainer">
-     <div id="MainContainer">
-     <svg width="960" height="500">
-  <rect fill="none" width="100%" height="100%"></rect>
-
+<body>
+<head>
+<style>
+body {
+    background-image: url("images/103WrightStreet_grid.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+    margin-left: 0px;
+}
+</style>
+</head>
+         <body>
+<svg fill=none width="960" height="667">
+  <rect x="0" y="0" width="100%" height="100%"></rect>
 </svg>
-     <script src="//d3js.org/d3.v4.min.js"></script>
+<script src="//d3js.org/d3.v4.min.js"></script>
 <script>
-
 var line = d3.line()
     .curve(d3.curveBasis);
-
 var svg = d3.select("svg")
     .call(d3.drag()
         .container(function() { return this; })
         .subject(function() { var p = [d3.event.x, d3.event.y]; return [p, p]; })
         .on("start", dragstarted));
-
 function dragstarted() {
   var d = d3.event.subject,
       active = svg.append("path").datum(d),
       x0 = d3.event.x,
       y0 = d3.event.y;
-
   d3.event.on("drag", function() {
     var x1 = d3.event.x,
         y1 = d3.event.y,
         dx = x1 - x0,
         dy = y1 - y0;
-
-    if (dx * dx + dy * dy > 100) d.push([x0 = x1, y0 = y1]);
+    if (dx * dx + dy * dy > 25) d.push([x0 = x1, y0 = y1]);
     else d[d.length - 1] = [x1, y1];
     active.attr("d", line);
   });
 }
-
 </script>
-    </div>
-</div>
-      <div id="TNBodyContainer">
-              <div id="TNOne"></div>
-              <div id="TNTwo"></div>
-     </div>
-   </body>   
-</html>
+<body>
+<button type="button" onclick="window.location.reload()">Refresh</button>
+</body>
