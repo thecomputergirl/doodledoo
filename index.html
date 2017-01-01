@@ -5,7 +5,11 @@
 #myDIV {
     width: 760px;
     height: 500px;
-    background-image: url("https://www.google.com.au/logos/doodles/2017/new-years-day-2017-5644902961512448.2-scta.png");
+    background-image: url("https://www.google.com.au/logos/doodles/2017/new-years-day-2017-5644902961512448.2-scta.png")
+        <svg fill=none width="960" height="500">
+  <rect x="0" y="0" width="100%" height="100%"></rect>
+</svg>
+<script src="//d3js.org/d3.v4.min.js"></script>;
 }
 #path {
   fill: none;
@@ -26,10 +30,7 @@ function myFunction() {
      document.getElementById("myDIV").style.backgroundImage = "url(https://www.google.com.au/logos/doodles/2017/new-years-day-2017-5644902961512448.2-scta.png)";
 }
 </script>
-<svg fill=none width="960" height="500">
-  <rect x="0" y="0" width="100%" height="100%"></rect>
-</svg>
-<script src="//d3js.org/d3.v4.min.js"></script>
+
 <script>
 var line = d3.line()
     .curve(d3.curveBasis);
@@ -54,4 +55,6 @@ function dragstarted() {
   });
 }
 </script>
+    </body>
+</html>
 
