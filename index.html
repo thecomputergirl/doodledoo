@@ -6,6 +6,10 @@
   
 .container {
     position: relative;
+    background-image: url("images/103WrightStreet_500_sml90.png);
+    max-width: 100%;
+    height: auto;
+    opacity: 1;
 }
   
 .topright {
@@ -15,11 +19,6 @@
     font-size: 18px;
 }
 
-background-image  { 
-    max-width: 100%;
-    height: auto;
-    opacity: 1;
-}
   
 path {
   fill: none;
@@ -32,11 +31,11 @@ path {
 </style>
 </head>
 <body>
-  <div class="container">
-      <background-image src="images/103WrightStreet_500_sml90.png" alt="Villa">
+  <div class="container"></div>
     <svg max-width="960" max-height="500">
   <rect fill="none" max-width="100%" max-height="100%"></rect>
 </svg>
+ </body>
 <script src="//d3js.org/d3.v4.min.js"></script>
 <script>
 
@@ -68,8 +67,7 @@ function dragstarted() {
 }
 
 </script>
-</div>
 
-</body>
-</html>
+    
+
 
